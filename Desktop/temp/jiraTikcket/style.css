@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.toolbox-container{
+    height: 5rem;
+    display: flex; 
+    align-items: center;
+    background-color: #636e72;
+}
+
+.toolbox-container > * {
+    margin-left: 4rem;
+    border-radius: 2px;
+    
+}
+.toolbox-priority-container{
+    height: 3rem;
+    width: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.2rem;
+    background-color: #2f3640;
+}
+.action-btn-container{
+    height: 3.5rem;
+    width: 8rem;
+    background-color: #2f3640;
+    display: flex;
+    
+}
+
+.action-btn-container > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    cursor: pointer;
+    /* font-weight: 800; */
+    color: #d1d8e0;
+    
+}
+.add-btn{
+    font-size: 1.8rem;
+}
+.remove-btn{
+    font-size: 1.6rem;
+}
+.add-btn:hover {
+    background-color: #485460;
+}
+.remove-btn:hover {
+    background-color: #485460;
+}
+.color{
+    height: 1.2rem;
+    width: 3rem;
+    border-radius: 2px; 
+    
+    
+}
+.lightgreen{
+    background-color: lightgreen;
+}
+
+.lightpink{
+    background-color: lightpink;
+}
+
+.black{
+    background-color: black;
+}
+.lightblue{
+    background-color: lightblue;
+}
+.modal-container{
+    height: 50vh;
+    width: 50vw;
+    display: none;
+    position:absolute;
+    top: calc( ( 100vh - 50vh) /2 );
+    left: calc((100vw - 50vw)/2);
+    /* background-color: aquamarine; */
+    /* display: none; */
+}
+.text-area-container{
+    height: 100%;
+    width: 75%;
+    outline: none;
+    background-color: #dfe6e9;
+    padding: 2rem;
+    font-size: 1.5rem;
+    border: none;
+    resize: none;
+    /* resize none remove text area icon from bottom  */
+    
+}
+.priority-color-container{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #485460;
+}
+
+.priority-color{
+    height: 3rem;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;   
+    /* background-color: aqua; */
+}
+
+.active{
+    border: 3px solid #dfe6e9;
+}
+
+.ticket-con{
+    height: 10rem;
+    width: 13rem;
+    background-color: #dfe6e9;
+}
+.priority-tag{
+    height: 1rem;
+    /* width: 100%;  */
+}
+
+.ticket-id{
+    height: 2rem;
+    padding: 0.4rem;
+    /* background-color: wheat; */
+
+}
+.task{
+    padding: 0.4rem;
+    height: 5rem;
+    outline: none;
+    /* background-color: white; */
+}
+.lock{
+    height: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    color: #636e72;
+    /* background-color: greenyellow; */
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 1rem;
+
+}
