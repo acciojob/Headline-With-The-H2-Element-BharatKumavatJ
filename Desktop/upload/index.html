@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myExcel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="pageActionCon">
+        <div class="pageAction"> Home   </div>
+        <div class="pageAction"> File   </div>
+        <div class="pageAction"> Insert   </div>
+        <div class="pageAction">   Layout </div>
+        <div class="pageAction">   Help</div>
+
+    </div>
+    <div class="cellActionCon">
+        <span class="material-icons">content_copy</span>
+        <span class="material-icons">content_cut  </span>
+        <span class="material-icons">content_paste  </span>
+        <select class="font-family">
+            <option value="monospace">monospace</option>
+            <option value="fantasy">fantasy</option>
+            <option value="cursive">cursive</option>
+            <option value="Sans-sarif">Sans-sarif</option>
+        </select>
+        <select class="font-size">
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+        </select>
+        
+        <span class="material-icons bold">format_bold</span>
+        <span class="material-icons italic">format_italic</span> 
+        <span class="material-icons underline">format_underline</span>
+        <span class="left material-icons alignment">format_align_left</span>
+        <span class="center material-icons alignment">format_align_center</span>
+        <span class="right material-icons alignment">format_align_right</span>
+        
+        <div class="color-prop">
+            <span class="material-icons ">format_color_text</span>
+            <input type="color" class="text-color">
+
+        </div>
+        
+        <div class="color-prop">
+
+            <span class="material-icons ">format_color_fill</span>
+            <input type="color" class="bg-color">
+        </div>
+
+        
+
+    </div>
+    <div class="formulaActionCon">
+
+        <input type="text" class="adressBar" readonly>
+        <span>fx</span>
+        <input type="text" class="formulaBar" placeholder="( A1 + B1 ) : Please write your formula space separated"> 
+        <!-- readonly -->
+
+    </div>
+
+    <!-- gridC -->
+    <div class="gridCon">
+
+        <div class="topLeftDummy"></div>
+        <div class="colAddress"></div>
+        <div class="cellCon">
+            <div class="rowAddress"></div>
+        </div>
+    </div>
+    
+    <div class="sheetActionCon">
+        <span class="material-icons add-sheet">post_add</span>
+
+        <div class="folderCon">
+            <div class="folder">
+                Sheet 1
+            </div>
+           
+        </div>
+
+    </div>
+    <script src="grid.js"></script>
+    <script src="cell-prop.js"></script>
+    <script src="cycleValidation.js"></script>
+    <script src="cycleTracePath.js"></script>
+    <script src="formula.js"></script>
+    <script src="sheethandling.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.pageActionCon{
+    height: 3rem;
+    background-color: #27ae60;
+    display: flex;
+    align-items: flex-end;
+}
+
+.pageAction{
+    /* width: 5rem;
+    border: 1px solid white; */
+    margin: 0.5rem;
+    color: #f1f2f6;
+    
+    
+}
+
+
+.cellActionCon{
+    height:  2.6rem;
+    background-color: #dfe4ea;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem ;
+    
+}
+.font-size{
+    padding: 0.1rem;
+}
+
+.font-family{
+    padding: 0.1rem;
+}
+.cellActionCon > *{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.cellActionCon > select{
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+
+.color-prop{
+    position: relative;
+}
+.color-prop > input{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+
+.formulaActionCon{
+    height:  2rem;
+    background-color: #dfe4ea;
+    display: flex;
+    align-items: center;
+}
+.adressBar{
+    width: 5rem;
+    text-align: center;
+}
+.formulaActionCon > *{
+    border: none;
+    margin: 0.5rem;
+    outline: none;
+    height: 60%;
+    
+}
+
+.formulaBar{
+    width: 100vw;
+}
+.formulaActionCon > span{
+     font-family: 'Lobster', cursive;
+     font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.gridCon{
+    height: calc( 100vh - 3rem - 3rem - 3rem - 3rem);
+    position: relative;
+    background-color: #dfe4ea;
+    overflow: scroll;
+}
+
+
+.topLeftDummy{
+    height: 2rem;
+    width: 2rem;
+    background-color: #57606f;
+    position: sticky;
+    top: 0rem;
+    left: 0rem;
+    z-index: 5;
+}
+.colAddress{
+   
+    position: sticky;
+    top: 2rem;
+    left: 0rem;
+
+
+}
+.rowAddress{
+
+    display: flex;
+    flex-direction: row;
+    
+    position: sticky;
+    top: 0rem;
+    left: 2rem;
+
+    
+   
+}
+
+/* sticky relative + fixed */
+.cellCon{
+    position:absolute; 
+    /* position relative used in parent */
+    top:0;
+    left: 2rem;
+    
+    
+}
+
+.rowCon{
+    display: flex;
+    flex-direction: row;
+}
+
+.colAdd{
+    height: 2rem;
+    width: 2rem;
+
+    border: 1px solid #bdc3c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.rowAdd{
+    height: 2rem;
+    width: 5rem;
+
+    border: 1px solid #bdc3c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cell{
+    height: 2rem;
+    width: 5rem;
+    border: 1px solid #bdc3c7;
+    outline: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* bootom element  */
+.sheetActionCon{
+    height:  3rem;
+    background-color: #dfe4ea;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.folderCon{
+    height: 80%;
+    width: 100vw;
+    margin-left: 0.8rem ;
+    margin-top: 0.1rem;
+    background-color: #dfe4ea;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.folder{
+    
+    font-style: bold;
+}
+
+
